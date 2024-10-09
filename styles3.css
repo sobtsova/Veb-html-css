@@ -84,7 +84,7 @@ body {
     background-color: #FF4500;
     padding: 10px; 
     text-align: justify; 
-    overflow: hidden; 
+    overflow-y: auto;
 }
 
 .block5 {
