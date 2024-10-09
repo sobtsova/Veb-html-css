@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+        "block1 block1 block1"
+        "block2 block3 block4"
+        "block2 block5 block4"
+        "block6 block6 block4"
+        "block7 block7 block7";
+    width: 100vw;
+    height: 100vh;
+    grid-template-rows: 1fr 1fr 2fr 0.5fr 1fr; 
+    grid-template-columns: 1fr 3fr 1fr; 
+}
+
+.block1 {
+    grid-area: block1;
+    background-color: #000000;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+    overflow: hidden; 
+}
+
+.block2 {
+    grid-area: block2;
+    background-color: #006666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden; 
+}
+
+.block2 .navigation ul {
+    list-style-type: none; 
+    padding: 0;
+}
+
+.block2 .navigation ul li {
+    margin: 5px 0; 
+}
+
+.block2 .navigation ul li a {
+    text-decoration: none; 
+    color: #333;
+    font-size: 18px;
+    display: inline-block; 
+    padding: 5px 10px; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.block2 .navigation ul li a:hover {
+    text-decoration: underline;
+    color: #000000; 
+}
+
+.block2 .navigation ul li a.active {
+    background-color: #00CC66; 
+    color: #ffffff; 
+    border-radius: 5px; 
+}
+
+.block3 {
+    grid-area: block3;
+    background-color: #00CC66;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+}
+
+.block4 {
+    grid-area: block4;
+    background-color: #006666;
+    padding: 10px; 
+    text-align: justify; 
+    overflow: hidden; 
+}
+
+.block5 {
+            grid-area: block5;
+            background-color: #000000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; 
+        }
+
+.block5 img {
+            width: auto; 
+            height: 100%;
+            max-width: 100%; 
+            max-height: 100%; 
+            object-fit: cover; 
+            border: 5px solid #00CC66; 
+            border-radius: 10px; 
+        }
+
+.block6 {
+    grid-area: block6;
+    background-color: #00CC66;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+}
+
+.block7 {
+    grid-area: block7;
+    background-color: #000000;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+    overflow: hidden; 
+}
+
+.block1 h1, .block7 h2 {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #006666; 
+    font-size: 36px; 
+    font-family: Verdana, sans-serif; 
+}
+
+h2 {
+    color: #006666; 
+    font-size: 20px; 
+    font-family: 'Verdana', serif; 
+}
+
+p {
+    color: #000000;
+    font-size: 18px; 
+    font-family: 'Verdana', sans-serif; 
+    padding: 30px; 
+    margin: 0;
+}
+
